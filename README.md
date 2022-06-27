@@ -17,3 +17,4 @@ https://bankingapi2785.herokuapp.com/swagger-ui/index.html
 
 Spring Boot Actuator has support using micrometer which can be used for exporting the metrics to tools such as Prometheus (beyond this implementation) for observability and monitoring. 
 Spring transaction Isolation Level is set to Read Committed which works with any of the standard RDMS like SQL, Oracle Server to prevent Lost Update Anamoly
+Another way to stop multiple threads accessing the account balance is using optimistic locking with MVCC using @Version attribute which is beyond the current implementation
